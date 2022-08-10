@@ -9,13 +9,19 @@
         "dymantic/laravel-instagram-feed": "^3.2",
         "facebook/graph-sdk": "^5.1",
         "facebook/php-business-sdk": "^13.0",
+        "genealabs/laravel-caffeine": "^9.0",
         "guzzlehttp/guzzle": "^7.4",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^2.14.1",
+        "laravel/socialite": "^5.5",
         "laravel/tinker": "^2.7",
-        "raiym/instagram-php-scraper": "^0.12.5"
+        "laravel/ui": "^4.0",
+        "raiym/instagram-php-scraper": "^0.12.5",
+        "slim/slim": "^4.10",
+        "socialiteproviders/instagram": "^4.1"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.7",
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",
@@ -52,7 +58,9 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [
+                "laravel/dusk"
+            ]
         }
     },
     "config": {
